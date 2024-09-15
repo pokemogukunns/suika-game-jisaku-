@@ -1,7 +1,62 @@
 <title>ホームページ</title>
-<h1> <a href="https://pokemogukunns.github.io/suika-game-jisaku.github.io/">ホーム</a><br></h1>
-<h6>検索:</h6>    <input type="text" id="search" placeholder="ページ内検索...">
-    <script>
+<style>
+        /* 上部に固定するためのスタイル */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: white;
+            z-index: 1000;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 検索バーのスタイル */
+        #search {
+            margin: 10px 0;
+            padding: 5px;
+            width: 300px;
+        }
+
+        /* コンテンツのスタイル */
+        #content {
+            margin-top: 150px; /* 上部のヘッダー分の余白を取る */
+        }
+
+        /* 検索結果をハイライトするスタイル */
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><a href="https://pokemogukunns.github.io/suika-game-jisaku.github.io/">ホーム</a></h1>
+
+        <!-- 検索バー -->
+        <h6>検索:</h6>
+        <input type="text" id="search" placeholder="ページ内検索...">
+
+        <!-- リスト -->
+        <details>
+          <summary>リスト</summary>
+          <a href="https://pokemogukunns.github.io/suika-game-jisaku.github.io/水火/">水火</a><br>
+          <a href="https://pokemogukunns.github.io/suika-game-jisaku.github.io/宇野/">宇野</a><br>
+          <a href="https://pokemogukunns.github.io/suika-game-jisaku.github.io/荷線呼ん獣蜂/">荷線呼ん獣蜂</a><br>
+          <a href="https://pokemogukunns.github.io/suika-game-jisaku.github.io/荷線呼ん獣蜂ⅢD/">荷線呼ん獣蜂ⅢD</a><br>
+          <a href="https://pokemogukunns.github.io/suika-game-jisaku.github.io/HTML/">pokemogukunnのプログラミングコーザHTML</a><br>
+          <a href="https://pokemogukunns.github.io/suika-game-jisaku.github.io/JavaScript/">pokemogukunnのプログラミングコーザJavaScript</a><br>
+          <a href="https://pokemogukunns.github.io/suika-game-jisaku.github.io/CSS/">pokemogukunnのプログラミングコーザCSS</a><br>
+          <a href="https://pokemogukunns.github.io/suika-game-jisaku.github.io/支援/">pokemogukunn(pokemogukunns)(pokemogukun)を支援</a><br>
+        </details>
+    </header>
+    <div id="content">
+        <h2>これは私が頑張って自作し、頑張って公開し、頑張ってコードを書いた、努力の結晶です。</h2><br>
+<p>ちゃんと、読んでね?荷線呼ん獣蜂 は、にせんよんじゅうはち</p>
+        <!-- 他のコンテンツ -->
+    </div>
+<script>
         document.getElementById('search').addEventListener('input', function() {
             const searchTerm = this.value.toLowerCase();
             const content = document.getElementById('content');
@@ -17,25 +72,6 @@
             }
         });
     </script>
-<details>
-  <summary>リスト</summary>
-  <a href="https://pokemogukunns.github.io/suika-game-jisaku.github.io/水火/">水火</a><br>
-  <a href="https://pokemogukunns.github.io/suika-game-jisaku.github.io/宇野/">宇野</a><br>
-  <a href="https://pokemogukunns.github.io/suika-game-jisaku.github.io/荷線呼ん獣蜂/">荷線呼ん獣蜂</a><br>
-  <a href="https://pokemogukunns.github.io/suika-game-jisaku.github.io/荷線呼ん獣蜂ⅢD/">荷線呼ん獣蜂ⅢD</a><br>
-  <a href="https://pokemogukunns.github.io/suika-game-jisaku.github.io/HTML/">pokemogukunnのプログラミングコーザHTML</a><br>
-  <a href="https://pokemogukunns.github.io/suika-game-jisaku.github.io/JavaScript/">pokemogukunnのプログラミングコーザJavaScript</a><br>
-  <a href="https://pokemogukunns.github.io/suika-game-jisaku.github.io/CSS/">pokemogukunnのプログラミングコーザCSS</a><br>
-  <a href="https://pokemogukunns.github.io/suika-game-jisaku.github.io/支援/">pokemogukunn(pokemogukunns)(pokemogukun)を支援</a><br>
-
-
-
-  
-</details>
-<h2>これは私が頑張って自作し、頑張って公開し、頑張ってコードを書いた、努力の結晶です。</h2>
-<p>ちゃんと、読んでね?荷線呼ん獣蜂 は、にせんよんじゅうはち</p>
-
-
 
 
 
