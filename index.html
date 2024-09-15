@@ -1,5 +1,22 @@
 <title>ホームページ</title>
 <h1> <a href="https://pokemogukunns.github.io/suika-game-jisaku.github.io/">ホーム</a><br></h1>
+<h6>検索:</h6>    <input type="text" id="search" placeholder="ページ内検索...">
+    <script>
+        document.getElementById('search').addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const content = document.getElementById('content');
+            const paragraphs = content.getElementsByTagName('p');
+
+            for (const p of paragraphs) {
+                const text = p.textContent.toLowerCase();
+                if (text.includes(searchTerm)) {
+                    p.innerHTML = p.textContent.replace(new RegExp(searchTerm, 'gi'), match => `<span class="highlight">${match}</span>`);
+                } else {
+                    p.innerHTML = p.textContent;
+                }
+            }
+        });
+    </script>
 <details>
   <summary>リスト</summary>
   <a href="https://pokemogukunns.github.io/suika-game-jisaku.github.io/水火/">水火</a><br>
