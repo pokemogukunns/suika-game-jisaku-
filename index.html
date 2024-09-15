@@ -7,11 +7,23 @@
             width: 100%;
             background-color: white;
             z-index: 1000;
-            padding: 5px 10px; /* パディングを減らしてコンパクトに */
+            padding: 5px; /* パディングを少なく */
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            display: flex; /* 横並び */
+            display: flex;
             align-items: center; /* 縦中央揃え */
-            justify-content: space-between; /* 要素間を均等配置 */
+            justify-content: space-between; /* 要素を均等に配置 */
+            gap: 10px; /* 各要素間の間隔を調整 */
+        }
+
+        h1 {
+            margin: 0; /* 余計なマージンを削除 */
+            font-size: 24px;
+        }
+
+        h6 {
+            margin: 0;
+            padding-right: 5px; /* 少し余裕を持たせる */
+            font-size: 16px; /* 小さめのフォントに */
         }
 
         /* 検索バーのスタイル */
